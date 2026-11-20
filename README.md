@@ -77,28 +77,28 @@ Provides the required operating voltage to the electronic components.
 
 7.Software Purpose
 
-  1)Keil µVision Writing and compiling Embedded C programs for LPC2129.
-  2)Flash Magic Uploading the HEX file into LPC2129.
-  3)Arduino IDE Programming the ESP8266 Wi-Fi module.
-  4)Arduino IoT Cloud Creating the dashboard and controlling appliances.
-  5)Embedded C Programming the ARM7 controller.
-  6)Arduino C++ Programming the ESP8266.
+  1)  Keil µVision Writing and compiling Embedded C programs for LPC2129.
+  2)  Flash Magic Uploading the HEX file into LPC2129.
+  3)  Arduino IDE Programming the ESP8266 Wi-Fi module.
+  4)  Arduino IoT Cloud Creating the dashboard and controlling appliances.
+  5)  Embedded C Programming the ARM7 controller.
+  6)  Arduino C++ Programming the ESP8266.
 
 8.Advantages
 
-=>  Improves patient comfort and convenience.
-=>  Reduces manual operation.
-=>  Provides remote control of appliances.
-=>   Makes nurse assistance requests easier.
-=>  Supports smart hospital automation.
-=>  Reduces unnecessary movement for patients.
+        =>  Improves patient comfort and convenience.
+        =>  Reduces manual operation.
+        =>  Provides remote control of appliances.
+        =>   Makes nurse assistance requests easier.
+        =>  Supports smart hospital automation.
+        =>  Reduces unnecessary movement for patients.
 
 9. Disadvantages
-=>  Requires a stable Wi-Fi connection.
-=>  Depends on electricity and internet availability for cloud-based functions.
-=>  Initial installation cost may be higher than manual systems.
-=>  Requires regular maintenance.
-=>  The system needs proper security to prevent unauthorized access.
+        =>  Requires a stable Wi-Fi connection.
+        =>  Depends on electricity and internet availability for cloud-based functions.
+        =>  Initial installation cost may be higher than manual systems.
+        =>  Requires regular maintenance.
+        =>  The system needs proper security to prevent unauthorized access.
 
 10.Applications
 
