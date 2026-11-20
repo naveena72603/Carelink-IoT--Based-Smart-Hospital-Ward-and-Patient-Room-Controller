@@ -27,6 +27,7 @@ Manual operation consumes time and effort.
 Patients with limited mobility may experience difficulties.
 
 **Disadvantages of Existing System**
+
       => More manual intervention.
       => Less convenience for patients.
       => Delays in requesting assistance.
@@ -43,21 +44,21 @@ Controls the electrical appliances such as bed light, fan, and night lamp.
 
 5.Working Principle of CARELINK
 
-  1)ESP8266 connects to the internet through Wi-Fi. 
+      1)ESP8266 connects to the internet through Wi-Fi. 
   
-  2)Arduino IoT Cloud provides a dashboard for controlling appliances.
+      2)Arduino IoT Cloud provides a dashboard for controlling appliances.
   
-  3)Users control the bed light, fan, and night lamp through the dashboard.
+      3)Users control the bed light, fan, and night lamp through the dashboard.
   
-  5)ESP8266 receives commands from the cloud and sends them to LPC2129 through UART communication.
+      4)ESP8266 receives commands from the cloud and sends them to LPC2129 through UART communication.
   
-  6)LPC2129 processes the commands and controls the relay module.
+      5)LPC2129 processes the commands and controls the relay module.
   
-  7)The relay switches the connected appliances ON or OFF.
+      6)The relay switches the connected appliances ON or OFF.
   
-  8)The LCD displays the system status.
+      7)The LCD displays the system status.
   
-  9)The patient can press the emergency push button to request nurse assistance.
+      8)The patient can press the emergency push button to request nurse assistance.
 
 
 6.Hardware Components Used
