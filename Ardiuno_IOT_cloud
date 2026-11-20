@@ -1,0 +1,85 @@
+#include "thingProperties.h"
+
+// ESP-01 UART communicates with LPC2129
+// ESP TX GPIO1 -> LPC RXD0 P0.1
+// ESP RX GPIO3 <- LPC TXD0 P0.0
+
+void sendCommand(char device, bool state)
+{
+  Serial.print(device);
+  Serial.println(state ? "1" : "0");
+}
+
+// Cloud variable callbacks
+
+void onBedLightChange()
+{
+  sendCommand('B', bedLight);
+}
+
+void onFanChange()
+{
+  sendCommand('F', fan);
+}
+
+void onNightLampChange()
+{
+  sendCommand('N', nightLamp);
+}
+
+void onNurseCallChange()
+{
+  sendCommand('R', nurseCall);
+}
+
+// Receive patient button status from LPC2129
+
+void receiveLPCData()
+{
+  static String received = "";
+
+  while (Serial.available())
+  {
+    char c = Serial.read();
+
+    if (c == '\n')
+    {
+      received.trim();
+
+      if (received == "C1")
+      {
+        callButtonPressed = true;
+        nurseCall = true;
+      }
+      else if (received == "C0")
+      {
+        callButtonPressed = false;
+      }
+
+      received = "";
+    }
+    else if (c != '\r')
+    {
+      received += c;
+    }
+  }
+}
+
+void setup()
+{
+  Serial.begin(9600);
+
+  initProperties();
+
+  ArduinoCloud.begin(ArduinoIoTPreferredConnection);
+
+  ArduinoCloud.printDebugInfo();
+}
+
+void loop()
+{
+  ArduinoCloud.update();
+
+  receiveLPCData();
+}
+
