@@ -27,11 +27,11 @@ Manual operation consumes time and effort.
 Patients with limited mobility may experience difficulties.
 
 **Disadvantages of Existing System**
-      =>More manual intervention.
-      =>Less convenience for patients.
-      =>Delays in requesting assistance.
-      =>No remote appliance control.
-      =>Difficult for patients with limited mobility.
+      => More manual intervention.
+      => Less convenience for patients.
+      => Delays in requesting assistance.
+      => No remote appliance control.
+      => Difficult for patients with limited mobility.
 
 4. Proposed System
 
@@ -43,29 +43,36 @@ Controls the electrical appliances such as bed light, fan, and night lamp.
 
 5.Working Principle of CARELINK
 
-  1)ESP8266 connects to the internet through Wi-Fi.
+  1)ESP8266 connects to the internet through Wi-Fi. 
+  
   2)Arduino IoT Cloud provides a dashboard for controlling appliances.
+  
   3)Users control the bed light, fan, and night lamp through the dashboard.
+  
   5)ESP8266 receives commands from the cloud and sends them to LPC2129 through UART communication.
+  
   6)LPC2129 processes the commands and controls the relay module.
+  
   7)The relay switches the connected appliances ON or OFF.
+  
   8)The LCD displays the system status.
+  
   9)The patient can press the emergency push button to request nurse assistance.
 
 
 6.Hardware Components Used
 
-1) .LPC2129 ARM7 Microcontroller
+1) LPC2129 ARM7 Microcontroller
 Acts as the main controller. It processes commands and controls the connected hardware.
-2). ESP8266 ESP-01 Wi-Fi Module
+2) ESP8266 ESP-01 Wi-Fi Module
 Provides wireless internet connectivity and communicates with the IoT cloud.
-3). Four-Channel Relay Module
+3) Four-Channel Relay Module
 Controls the electrical appliances such as bed light, fan, and night lamp.
-4). 16×2 LCD Display
+4) 16×2 LCD Display
 Displays system information and operating status.
-5). Push Button
+5) Push Button
 Used by the patient to send an emergency nurse-call request.
-6). Power Supply
+6) Power Supply
 Provides the required operating voltage to the electronic components.
 
 7.Software Purpose
@@ -79,19 +86,19 @@ Provides the required operating voltage to the electronic components.
 
 8.Advantages
 
-=> Improves patient comfort and convenience.
-=> Reduces manual operation.
-=> Provides remote control of appliances.
-=> Makes nurse assistance requests easier.
-=> Supports smart hospital automation.
-=> Reduces unnecessary movement for patients.
+=>  Improves patient comfort and convenience.
+=>  Reduces manual operation.
+=>  Provides remote control of appliances.
+=>   Makes nurse assistance requests easier.
+=>  Supports smart hospital automation.
+=>  Reduces unnecessary movement for patients.
 
 9. Disadvantages
-=> Requires a stable Wi-Fi connection.
-=> Depends on electricity and internet availability for cloud-based functions.
-=> Initial installation cost may be higher than manual systems.
-=> Requires regular maintenance.
-=> The system needs proper security to prevent unauthorized access.
+=>  Requires a stable Wi-Fi connection.
+=>  Depends on electricity and internet availability for cloud-based functions.
+=>  Initial installation cost may be higher than manual systems.
+=>  Requires regular maintenance.
+=>  The system needs proper security to prevent unauthorized access.
 
 10.Applications
 
@@ -99,6 +106,6 @@ Provides the required operating voltage to the electronic components.
 * Patient room automation.
 * Nurse-call systems.
 * Remote appliance control.
-*Assisted living facilities.
+* Assisted living facilities.
 
 AUTHOR NAME: NAVEENA.A
