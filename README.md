@@ -89,11 +89,12 @@ Provides the required operating voltage to the electronic components.
         =>  Improves patient comfort and convenience.
         =>  Reduces manual operation.
         =>  Provides remote control of appliances.
-        =>   Makes nurse assistance requests easier.
+        =>  Makes nurse assistance requests easier.
         =>  Supports smart hospital automation.
         =>  Reduces unnecessary movement for patients.
 
 9. Disadvantages
+    
         =>  Requires a stable Wi-Fi connection.
         =>  Depends on electricity and internet availability for cloud-based functions.
         =>  Initial installation cost may be higher than manual systems.
