@@ -1,0 +1,2 @@
+# Carelink-IoT--Based-Smart-Hospital-Ward-and-Patient-Room-Controller
+CareLink is an IoT-based smart healthcare automation system using the LPC2129 ARM7 controller and ESP-01 Wi-Fi module. It enables remote control of bed lights, fans, and night lamps through an IoT cloud dashboard. A bedside call button alerts nurses, while an LCD displays device status, improving patient comfort, convenience, and care efficiency.
